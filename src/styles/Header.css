@@ -9,8 +9,8 @@
 }
 
 .header.custom-header {
-  background-image: url('./header.jpg'); /* Ganti dengan path gambar Anda */
-  background-size: cover;
+background-color: rgb(250, 215, 232)
+;  background-size: cover;
   background-position: center;
 }
 
