@@ -1,0 +1,105 @@
+/* Container styling */
+.container-about {
+  background: linear-gradient(to bottom right, #ffccd5, #ffe6e9); /* Pink pastel gradient */
+  border-radius: 20px; /* Membuat sudut lebih lembut */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Bayangan untuk efek elegan */
+  max-width: 900px;
+  margin: 60px auto; /* Memberi jarak atas bawah */
+  padding: 40px 30px; /* Spasi dalam kontainer */
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Membuat gambar bulat */
+  object-fit: cover;
+  border: 2px solid #ff6384; /* Warna pink untuk bingkai */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05); /* Sedikit membesar saat hover */
+}
+
+/* Name styling */
+.name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333; /* Fallback color */
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  background: linear-gradient(to right, #ff6384, #ff9aa2);
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific */
+  color: transparent; /* Makes the background gradient visible through text */
+}
+
+
+/* Position styling */
+.position {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #555; /* Warna abu-abu lembut */
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 20px;
+}
+
+/* Bio styling */
+.bio {
+  font-size: 1rem;
+  color: #444; /* Warna teks yang nyaman dilihat */
+  line-height: 1.7;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic; /* Memberikan aksen elegan */
+}
+
+/* Contact list styling */
+.contact-list li {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-list i {
+  color: #ff6384; /* Warna pink pastel untuk ikon */
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container-about {
+    padding: 20px;
+    margin: 30px auto;
+  }
+
+  .name {
+    font-size: 1.6rem;
+  }
+
+  .position {
+    font-size: 1rem;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-about {
+    padding: 50px 40px;
+  }
+}

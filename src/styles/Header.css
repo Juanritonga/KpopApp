@@ -1,0 +1,66 @@
+.custom-header {
+  background-size: cover;
+  background-position: center;
+  position: sticky;
+  top: 0; /* Pastikan header tetap di atas saat scrolling */
+  z-index: 1000; /* Menjaga header tetap di atas konten lainnya */
+  padding-top: 5px; /* Atur jarak atas jika perlu */
+  padding-bottom: 5px; /* Atur jarak bawah jika perlu */
+}
+
+.header.custom-header {
+  background-image: url('./header.jpg'); /* Ganti dengan path gambar Anda */
+  background-size: cover;
+  background-position: center;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.logo-img {
+  max-height: 40px;
+}
+
+.custom-header {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Styling for logo text */
+.logo-text {
+  font-size: 1.8rem; /* Ukuran lebih besar agar menarik perhatian */
+  font-weight: 700; /* Tebal untuk menonjolkan elemen logo */
+  font-family: 'Poppins', sans-serif; /* Font modern */
+  color: #d6138b; /* Warna utama */
+  letter-spacing: 2px; /* Spasi antar huruf */
+  text-transform: uppercase; /* Huruf kapital semua */
+  position: relative; /* Untuk efek dekoratif */
+  display: inline-block;
+}
+
+/* Highlight bagian tertentu */
+.logo-text .highlight {
+  color: #c81d8f; /* Warna berbeda untuk menonjolkan */
+  font-style: italic; /* Sedikit gaya berbeda */
+  text-shadow: 1px 1px 5px rgb(245, 250, 255); /* Efek glowing lembut */
+}
+
+/* Hover effect */
+.logo-text:hover {
+  color: #fd0bd1;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.965); /* Glowing saat hover */
+  transform: scale(1.05); /* Sedikit pembesaran */
+  transition: all 0.3s ease-in-out; /* Transisi halus */
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff; /* Warna biru ketika hover */
+}
+
+

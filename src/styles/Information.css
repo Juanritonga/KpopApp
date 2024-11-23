@@ -1,0 +1,163 @@
+/* Styling untuk judul List of Groups */
+.group-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #4B0082;
+  }
+  
+  /* Styling untuk card grup */
+  .group-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px; /* Menjaga tinggi card tetap konsisten */
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px; /* Membuat card lebih elegan */
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Gambar pada kartu grup */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Nama grup */
+  .group-name {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Styling untuk list anggota grup */
+  .members-list {
+    padding-left: 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+    max-height: 150px; /* Membatasi tinggi list members */
+    overflow-y: auto;  /* Scrollable jika terlalu panjang */
+    margin-bottom: auto; /* Menjaga list tetap berada di atas tombol */
+  }
+  
+  .members-list li {
+    margin-bottom: 5px;
+  }
+  
+  /* Pesan ketika data kosong */
+  .no-data {
+    text-align: center;
+    color: #888;
+    font-size: 1.25rem;
+  }
+  
+  /* Pesan loading */
+  .loading-text {
+    text-align: center;
+    color: #4B0082;
+    font-size: 1.25rem;
+  }
+  
+  /* Styling tombol untuk link */
+  .btn {
+    font-size: 0.875rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
+  
+  /* Styling untuk tombol lebih info */
+  .btn-primary {
+    background-color: #4B0082;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #6A1D97;
+  }
+  
+  /* Styling untuk tombol halaman resmi */
+  .btn-secondary {
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Grid Layout - memastikan tampilan responsif */
+  .row-cols-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .row-cols-md-2 {
+    grid-template-columns: repeat(2, 1fr); /* Dua kolom per baris */
+  }
+  
+  .row-cols-lg-3 {
+    grid-template-columns: repeat(3, 1fr); /* Tiga kolom per baris di layar besar */
+  }
+
+  /* Styling for the loading container */
+.loading-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ee71d1;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Tampil selama 3 detik */
+  }
+  
+  /* Spinner styles */
+  .spinner-border {
+    color: #ee71d1;
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3rem;
+    margin-right: 1rem;
+    animation: spin 1s linear infinite; /* Spinner berputar selama 1.5 detik */
+  }
+  
+  /* Keyframes untuk fadeIn animasi */
+  @keyframes fadeIn {
+    100% {
+      opacity: 1; /* Menjadi sepenuhnya terlihat */
+    }
+  }
+  
+  /* Keyframes untuk spinner */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg); /* Mulai dari rotasi 0 derajat */
+    }
+    100% {
+      transform: rotate(360deg); /* Berputar penuh */
+    }
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    .group-card {
+      min-height: 420px; /* Memperbesar card di perangkat kecil */
+    }
+  }
+  

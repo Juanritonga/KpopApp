@@ -1,0 +1,24 @@
+/* Match.css */
+.match-result .match-percentage {
+  color: #ff3366; /* Pink */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #000000;
+  color: white;
+}
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
