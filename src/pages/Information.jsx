@@ -114,8 +114,8 @@ const Information = () => {
       ) : idolData ? (
         filteredGroups.length > 0 ? (
           <>
-<div className="row row-cols-3 row-cols-md-3 g-4">
-                  {currentGroups.map((group, index) => (
+  <div className="row row-cols-md-3 row-cols-1 row-cols-sm-2  g-4">
+                      {currentGroups.map((group, index) => (
                 <div key={index} className="col">
                   <div className="group-card card shadow-lg h-100">
                     <img

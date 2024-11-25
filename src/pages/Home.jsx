@@ -4,14 +4,15 @@ import berita2 from "../assets/berita2.jpg";
 import berita3 from "../assets/berita3.jpg";
 import berita4 from "../assets/berita4.jpg";
 import berita5 from "../assets/berita5.jpg";
-import "../styles/Home.css"; // Import file CSS untuk styling
+import "../styles/Home.css"; // Import file CSS for styling
 
 const Home = () => {
   return (
     <div className="home-container">
-      {/* Berita Utama */}
+
+      {/* Main News Section */}
       <div className="row mb-4">
-        <div className="col-md-8">
+        <div className="col-lg-8 col-md-12 mb-4">
           <div
             className="news-card"
             onClick={() =>
@@ -25,7 +26,7 @@ const Home = () => {
               <img
                 src={berita1}
                 alt="BABYMONSTER World Tour"
-                className="news-image"
+                className="news-image img-fluid"
               />
             </div>
             <div className="news-content">
@@ -43,15 +44,15 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Berita Sampingan */}
-        <div className="col-md-4">
+        {/* Sidebar News Section */}
+        <div className="col-lg-4 col-md-12">
           <div
-            className="card"
+            className="card mb-3"
             onClick={() =>
               window.open("https://yoursay.suara.com/entertainment/2024/11/07/200229/exo-monster-pemberontakan-dari-psikis-babak-belur-yang-diselamatkan-cinta", "_blank")
             }
           >
-            <img src={berita5} className="card-img-top" alt="BabyMonster" />
+            <img src={berita5} className="card-img-top img-fluid" alt="BabyMonster" />
             <div className="card-body">
               <h5 className="card-title">
                 EXO Monster : Pemberontakan dari Psikis Babak Belur yang
@@ -59,10 +60,7 @@ const Home = () => {
               </h5>
               <p className="card-text">
                 EXACT pada 9 Juni 2016. Lagu utama “Monster” berkisah tentang
-                pemberontak yang berjuang melawan penindasan. Saat pertama kali
-                mendengarkan lagunya, saya langsung terkesan karena Monster
-                punya melodi dan dance yang intens. Vokal Baekhyun di pembuka
-                lagu sudah membuat penasaran dengan keseluruhan ceritanya.
+                pemberontak yang berjuang melawan penindasan...
               </p>
               <p className="card-text">
                 <small className="text-muted">
@@ -74,10 +72,10 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Baris Berita Kecil di Bawah */}
+      {/* Row of Smaller News Below */}
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6 mb-4">
             <div
               className="card"
               onClick={() =>
@@ -86,16 +84,15 @@ const Home = () => {
             >
               <img
                 src={berita3}
-                className="card-img-top"
+                className="card-img-top img-fluid"
                 alt="Ayu Ting Ting"
               />
               <div className="card-body">
                 <h5 className="card-title">
-                Blackpink dan Deretan Merek yang Bekerja Sama dengan Para Anggotanya...
+                  Blackpink dan Deretan Merek yang Bekerja Sama dengan Para Anggotanya...
                 </h5>
                 <p className="card-text">
-                Blackpink, grup K-Pop yang mendunia, tidak hanya dikenal karena musiknya, tetapi para anggotaya juga sebagai ikon mode duta merek ternama
-                  berkomentar negatif tentang...
+                  Blackpink, grup K-Pop yang mendunia, tidak hanya dikenal karena musiknya, tetapi para anggotanya juga sebagai ikon mode duta merek ternama...
                 </p>
                 <p className="card-text">
                   <small className="text-muted">
@@ -106,7 +103,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6 mb-4">
             <div
               className="card"
               onClick={() =>
@@ -115,16 +112,15 @@ const Home = () => {
             >
               <img
                 src={berita4}
-                className="card-img-top"
+                className="card-img-top img-fluid"
                 alt="Jadwal Konser"
               />
               <div className="card-body">
                 <h5 className="card-title">
-                Kalau Main Escape Room, Siapa Member NCT Dream yang Bakal Menjagamu?
+                  Kalau Main Escape Room, Siapa Member NCT Dream yang Bakal Menjagamu?
                 </h5>
                 <p className="card-text">
-Seandainya kamu main bareng NCT Dream, kira-kira siapa yang bakal menjagamu dari setiap tantangan berbahaya di escape room?
-
+                  Seandainya kamu main bareng NCT Dream, kira-kira siapa yang bakal menjagamu dari setiap tantangan berbahaya di escape room?
                 </p>
                 <p className="card-text">
                   <small className="text-muted">
@@ -135,7 +131,7 @@ Seandainya kamu main bareng NCT Dream, kira-kira siapa yang bakal menjagamu dari
             </div>
           </div>
 
-          <div className="col-md-4">
+          <div className="col-lg-4 col-md-6 mb-4">
             <div
               className="card"
               onClick={() =>
@@ -144,15 +140,15 @@ Seandainya kamu main bareng NCT Dream, kira-kira siapa yang bakal menjagamu dari
             >
               <img
                 src={berita2}
-                className="card-img-top"
+                className="card-img-top img-fluid"
                 alt="Jadwal Konser"
               />
               <div className="card-body">
                 <h5 className="card-title">
-                Selamat! SEVENTEEN dan aespa Berhasil meraih Daesang MAMA Awards 2024! Hadiri acara MAMA Awards banyak idol...
+                  Selamat! SEVENTEEN dan aespa Berhasil meraih Daesang MAMA Awards 2024!
                 </h5>
                 <p className="card-text">
-                Hari terakhir MAMA Awards 2024 di Kyocera Dome Osaka, Jepang sukses di gelar dengan meriah.
+                  Hari terakhir MAMA Awards 2024 di Kyocera Dome Osaka, Jepang sukses di gelar dengan meriah...
                 </p>
                 <p className="card-text">
                   <small className="text-muted">
@@ -164,6 +160,7 @@ Seandainya kamu main bareng NCT Dream, kira-kira siapa yang bakal menjagamu dari
           </div>
         </div>
       </div>
+
     </div>
   );
 };

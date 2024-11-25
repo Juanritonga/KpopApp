@@ -101,20 +101,7 @@
   }
   
   /* Grid Layout - memastikan tampilan responsif */
-  .row-cols-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
   
-  .row-cols-md-2 {
-    grid-template-columns: repeat(2, 1fr); /* Dua kolom per baris */
-  }
-  
-  .row-cols-lg-3 {
-    grid-template-columns: repeat(3, 1fr); /* Tiga kolom per baris di layar besar */
-  }
-
   /* Styling for the loading container */
 .loading-text {
     display: flex;

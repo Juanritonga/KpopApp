@@ -63,4 +63,17 @@ background-color: rgb(250, 215, 232)
   color: #007bff; /* Warna biru ketika hover */
 }
 
+/* Menghilangkan efek warna pada tombol toggle */
+.navbar-toggler {
+  border-color: transparent; /* Menghilangkan border */
+  background-color: transparent; /* Menghilangkan latar belakang */
+}
+
+/* Menghilangkan efek warna saat hover */
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: transparent; /* Tidak ada perubahan warna saat hover */
+  border-color: transparent; /* Tidak ada border saat hover */
+}
+
 
